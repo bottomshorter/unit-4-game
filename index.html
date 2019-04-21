@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Anthony's Crystal Collector Game </title>
+</head>
+<body>
+    <!---Container that holds everything-->
+    <div class="container">
+            <!--Jumbotron-->
+            <div class="jumbotron" style="padding-bottom: 25px; padding-top: 25px; background-color:rgb(93, 196, 196);margin-bottom: 4px">
+                <div class="container">
+                        <h1 class="text-center"><strong>Anthony's Crystal Collector</strong></h1>
+                </div>
+            </div> 
+            <!--Instructions Panel-->
+            <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center">Instructions</h3>
+                    </div>
+                    <div class="panel-body">
+                        <p>At the start of the game, there will be a randomly generated number called the target number. By clicking on one of the four crystals you will add a certian amount of points to the total score. 
+                        </p>
+                        <p>You will win the game by matching your total score to generated number and you lose the game if your total score goes above the generated number. You will not be able to see the value of the crystals until you click on one.</p>
+                        <p>Crystal value will vary each game.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!--Target Score / Your Score Panel-->
+            <div class="row">
+            <div class="card" style="width: 25%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Target Score:</h5>
+                      <p id="targetscore">0</p>
+                    </div>
+            </div>
+            
+            <div class="card" style="width: 25%;">
+                    <div class="card-body">
+                          <h5 class="card-title">Your Score:</h5>
+                          <p id="playerscore">0</p>
+                    </div>
+            </div>
+            
+            
+
+            <!--Wins Card-->
+            <div class="card" style="width: 25%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Wins:</h5>
+                      <p id="wins">0</p>
+                    </div>
+                  </div>
+            
+            <!--Losses Card-->
+            <div class="card" style="width: 25%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Losses:</h5>
+                      <p id="losses">0</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">Select one of these gems:</h3>
+                            </div>
+                            <div class="panel-body">
+                                    <div class="panel-body text-center">
+                                            <img src="assets/images/bluegem.png" alt="" id="bluegem">
+                                            <img src="assets/images/greengem.png" alt="" id="greengem">
+                                            <img src="assets/images/redgem.png" alt="" id="redgem">
+                                            <img src="assets/images/yellowgem.png" alt="" id="yellowgem">
+                                        </div>
+                            </div>
+                        </div>
+                </div>
+        </div>
+
+    </div>
+ <script src="assets/javascript/game.js"></script>   
+
+   
+</body>
+</html>
